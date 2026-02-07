@@ -70,14 +70,20 @@ function Layout() {
         </div>
       </aside>
 
+      {sidebarOpen && (
+        <div
+          className="sidebar-overlay"
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
+
       {/* Main Content */}
       <div className="main-content">
         {/* Header */}
         <header className="header">
           <button
-            className="btn btn-icon"
+            className="btn btn-icon menu-toggle"
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            style={{ display: 'none' }}
           >
             ☰
           </button>

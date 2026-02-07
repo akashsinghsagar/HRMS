@@ -261,16 +261,16 @@ function Dashboard() {
         speed={1}
       />
       
-      <div className="relative z-10 w-full p-6 space-y-6">
+      <div className="relative z-10 w-full p-4 sm:p-6 space-y-4 sm:space-y-6">
         {/* KPI Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 border border-blue-100 hover:shadow-xl transition-shadow">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-5 sm:p-6 border border-blue-100 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Total Employees</p>
-                <p className="text-3xl font-bold text-gray-900 mt-2">{employees.length}</p>
+                <p className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">{employees.length}</p>
               </div>
-              <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-3xl">👥</span>
               </div>
             </div>
@@ -279,13 +279,13 @@ function Dashboard() {
             </div>
           </div>
 
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 border border-green-100 hover:shadow-xl transition-shadow">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-5 sm:p-6 border border-green-100 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Present Today</p>
-                <p className="text-3xl font-bold text-gray-900 mt-2">{todayStats.present}</p>
+                <p className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">{todayStats.present}</p>
               </div>
-              <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-3xl">✓</span>
               </div>
             </div>
@@ -294,13 +294,13 @@ function Dashboard() {
             </div>
           </div>
 
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 border border-red-100 hover:shadow-xl transition-shadow">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-5 sm:p-6 border border-red-100 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Absent Today</p>
-                <p className="text-3xl font-bold text-gray-900 mt-2">{todayStats.absent}</p>
+                <p className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">{todayStats.absent}</p>
               </div>
-              <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-3xl">✕</span>
               </div>
             </div>
@@ -309,13 +309,13 @@ function Dashboard() {
             </div>
           </div>
 
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-6 border border-orange-100 hover:shadow-xl transition-shadow">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg p-5 sm:p-6 border border-orange-100 hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">On Leave Today</p>
-                <p className="text-3xl font-bold text-gray-900 mt-2">{todayStats.leave}</p>
+                <p className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">{todayStats.leave}</p>
               </div>
-              <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-3xl">⊕</span>
               </div>
             </div>
@@ -332,7 +332,7 @@ function Dashboard() {
               <h3 className="text-lg font-bold text-gray-900">Attendance Trends</h3>
               <p className="text-sm text-gray-500 mt-1">Last 7 days performance</p>
             </div>
-            <div className="h-72">
+            <div className="h-64 sm:h-72">
               {attendance.length > 0 ? (
                 <Line data={getLast7DaysAttendance()} options={chartOptions} />
               ) : (
@@ -348,7 +348,7 @@ function Dashboard() {
               <h3 className="text-lg font-bold text-gray-900">Status Distribution</h3>
               <p className="text-sm text-gray-500 mt-1">Overall breakdown</p>
             </div>
-            <div className="h-72">
+            <div className="h-64 sm:h-72">
               {attendance.length > 0 ? (
                 <Doughnut data={getStatusDistribution()} options={chartOptions} />
               ) : (
@@ -364,7 +364,7 @@ function Dashboard() {
               <h3 className="text-lg font-bold text-gray-900">Department Distribution</h3>
               <p className="text-sm text-gray-500 mt-1">Employees by department</p>
             </div>
-            <div className="h-72">
+            <div className="h-64 sm:h-72">
               {employees.length > 0 ? (
                 <Pie data={getDepartmentChartData()} options={chartOptions} />
               ) : (
@@ -380,7 +380,7 @@ function Dashboard() {
               <h3 className="text-lg font-bold text-gray-900">Attendance Rate by Department</h3>
               <p className="text-sm text-gray-500 mt-1">Percentage</p>
             </div>
-            <div className="h-72">
+            <div className="h-64 sm:h-72">
               {employees.length > 0 && attendance.length > 0 ? (
                 <Bar data={getAttendanceRateByDept()} options={{
                   ...chartOptions,

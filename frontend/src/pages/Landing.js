@@ -16,7 +16,7 @@ function Landing() {
       
       <div className="relative z-10">
         {/* Navigation */}
-        <nav className="container mx-auto px-6 py-6">
+        <nav className="container mx-auto px-4 sm:px-6 py-5 sm:py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
@@ -36,7 +36,7 @@ function Landing() {
         </nav>
 
         {/* Hero Section */}
-        <section className="container mx-auto px-6 py-20 text-center">
+        <section className="container mx-auto px-4 sm:px-6 py-14 sm:py-20 text-center">
           <div className="max-w-4xl mx-auto">
             <div className="inline-block mb-6">
               <span className="px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-semibold text-blue-600 shadow-md">
@@ -44,7 +44,7 @@ function Landing() {
               </span>
             </div>
             
-            <h1 className="text-6xl md:text-7xl font-bold mb-8 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-8 leading-tight">
               <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Simplify Your
               </span>
@@ -54,42 +54,42 @@ function Landing() {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl md:text-2xl text-gray-600 mb-10 sm:mb-12 max-w-3xl mx-auto">
               Streamline employee management, track attendance, and gain valuable insights with our intuitive HRMS platform. Built for teams who want to focus on what matters most.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button
                 onClick={() => navigate('/dashboard')}
-                className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
+                className="group w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
               >
                 Get Started
                 <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </button>
               <button
                 onClick={() => navigate('/employees')}
-                className="px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-700 rounded-2xl font-bold text-lg shadow-lg hover:bg-white hover:shadow-xl transition-all duration-300"
+                className="w-full sm:w-auto px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-700 rounded-2xl font-bold text-lg shadow-lg hover:bg-white hover:shadow-xl transition-all duration-300"
               >
                 View Demo
               </button>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto">
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-                <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 mt-12 sm:mt-20 max-w-2xl mx-auto">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
                   100%
                 </div>
                 <div className="text-sm text-gray-600 font-medium">Free Forever</div>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-                <div className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
                   Fast
                 </div>
                 <div className="text-sm text-gray-600 font-medium">Lightning Quick</div>
               </div>
-              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-                <div className="text-4xl font-bold bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text text-transparent mb-2">
+              <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-pink-600 to-blue-600 bg-clip-text text-transparent mb-2">
                   Easy
                 </div>
                 <div className="text-sm text-gray-600 font-medium">Simple to Use</div>
@@ -99,19 +99,19 @@ function Landing() {
         </section>
 
         {/* Features Section */}
-        <section className="container mx-auto px-6 py-20">
+        <section className="container mx-auto px-4 sm:px-6 py-16 sm:py-20">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Everything You Need
               </span>
             </h2>
-            <p className="text-xl text-gray-600">Powerful features to manage your workforce efficiently</p>
+            <p className="text-base sm:text-xl text-gray-600">Powerful features to manage your workforce efficiently</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
             {/* Feature 1 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
               <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                 <span className="text-3xl">👥</span>
               </div>
@@ -122,7 +122,7 @@ function Landing() {
             </div>
 
             {/* Feature 2 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
               <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                 <span className="text-3xl">📅</span>
               </div>
@@ -133,7 +133,7 @@ function Landing() {
             </div>
 
             {/* Feature 3 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
               <div className="w-14 h-14 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                 <span className="text-3xl">📊</span>
               </div>
@@ -144,7 +144,7 @@ function Landing() {
             </div>
 
             {/* Feature 4 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
               <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                 <span className="text-3xl">🔒</span>
               </div>
@@ -155,7 +155,7 @@ function Landing() {
             </div>
 
             {/* Feature 5 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
               <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                 <span className="text-3xl">⚡</span>
               </div>
@@ -166,7 +166,7 @@ function Landing() {
             </div>
 
             {/* Feature 6 */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-all hover:translate-y-[-4px] duration-300">
               <div className="w-14 h-14 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                 <span className="text-3xl">📱</span>
               </div>
@@ -179,17 +179,17 @@ function Landing() {
         </section>
 
         {/* CTA Section */}
-        <section className="container mx-auto px-6 py-20">
-          <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl p-12 text-center shadow-2xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        <section className="container mx-auto px-4 sm:px-6 py-16 sm:py-20">
+          <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl p-8 sm:p-12 text-center shadow-2xl">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 sm:mb-6">
               Ready to Get Started?
             </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-xl text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto">
               Join thousands of organizations managing their workforce with HRMS Lite. It's free, forever.
             </p>
             <button
               onClick={() => navigate('/dashboard')}
-              className="px-10 py-4 bg-white text-purple-600 rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+              className="w-full sm:w-auto px-10 py-4 bg-white text-purple-600 rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
             >
               Launch Dashboard →
             </button>
@@ -197,8 +197,8 @@ function Landing() {
         </section>
 
         {/* Footer */}
-        <footer className="container mx-auto px-6 py-12 text-center">
-          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+        <footer className="container mx-auto px-4 sm:px-6 py-10 sm:py-12 text-center">
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 shadow-lg">
             <p className="text-gray-600 mb-4">
               Built with ❤️ using React, Express, PostgreSQL, and Tailwind CSS
             </p>
