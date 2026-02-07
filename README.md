@@ -6,7 +6,7 @@ A modern, full-stack HR management application for managing employees and tracki
 
 ## 🚀 Live Demo
 
-**Frontend:** [https://hrms-official.vercel.app](https://hrms-official.vercel.app)  
+**Frontend:** [https://hrms-official.vercel.app](https://hrms-offical.vercel.app/)  
 **Backend API:** [https://hrms-zln1.onrender.com](https://hrms-zln1.onrender.com)
 
 ## ✨ Features
